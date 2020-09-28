@@ -1,2 +1,2 @@
-# iic-contrastive
-An extension of "Invariant Information Clustering for Unsupervised Image Classification and Segmentation" which adds a contrastive learning head to improve performance.
+# IIC with Contrastive Learning
+An extension of "Invariant Information Clustering for Unsupervised Image Classification and Segmentation" which adds a contrastive learning head to improve performance. This work is part of my bachelor thesis project, and shows how IIC can be improved by adding an additional training head which performs contrastive representation learning using couples of randomly augmented images. Part of the code is inspired by the original [IIC repo] (https://github.com/xu-ji/IIC) and another [SimCLR repo] (https://github.com/sthalles/SimCLR).
