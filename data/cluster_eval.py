@@ -88,11 +88,7 @@ def cluster_subheads_eval(config, net, mapping_assignment_dataloader, mapping_te
   else:
     best_sub_head = best_sub_head_eval
 
-  if config.mode == "IID":
-    assert (config.mapping_assignment_partitions == config.mapping_test_partitions)
-    test_accs = train_accs
-  else:
-    assert (False)
+  test_accs = train_accs
   #returns a dict of eval metrics
   return {"test_accs": list(test_accs),
           "avg": np.mean(test_accs),
